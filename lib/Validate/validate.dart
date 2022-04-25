@@ -15,12 +15,14 @@ final passwordRegExp =
     return passwordRegExp.hasMatch(this);
   }
 
-  bool get isNotNull{
-    return isNotNull;
+  bool get isEmptyInput{
+    return isEmpty;
 }
 
   bool get isValidPhone{
     final phoneRegExp = RegExp(r"^\+?0[0-9]{10}$");
     return phoneRegExp.hasMatch(this);
   }
+
+  
 }
